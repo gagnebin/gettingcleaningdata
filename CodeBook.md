@@ -9,7 +9,7 @@ The column names (i.e. variables) are descibed below:
 
 1. id: identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
 
-1, ActivityLabel: activity name (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+1. ActivityLabel: activity name (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
 
 1. ActivityCode: activity class (1, 2, 3, 4, 5, 6) labels with corresponds to ActivityLabel
 
