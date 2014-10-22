@@ -9,10 +9,9 @@ What is delivered in the repository
 
 The following information are passed to the evaluator:
 
-1. The raw data.
-2. A [tidy data set](http://vita.had.co.nz/papers/tidy-data.pdf) 
-3. A code book markdown document describing each variable and its values in the tidy data set.  
-4. An explicit and exact recipe you used to go from 1 -> 2,3 
+1. A [tidy data set](http://vita.had.co.nz/papers/tidy-data.pdf) 
+2. A code book markdown document describing each variable and its values in the tidy data set.  
+3. An explicit and exact recipe you used to go from 1 -> 2,3 
 
 Let's look at each part of the data package you see in the assignment webpage on coursera and in the repository. 
 
