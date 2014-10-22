@@ -54,7 +54,7 @@ std(): Mean of the standard deviation of each variable for each activity for bot
 1. fBodyGyroJerkMag-meanFreq() (units: radians/second)
 
 
-To avoid confusion with the columns' names the second mean() was ignored, but in the README.md it's the "mean of the mean" and the "mean of the std" which are diplayed in the data set.
+To avoid confusion with the columns' names the second mean() was ignored, but as mentioned in the README.md it's the "mean of the mean" and the "mean of the std" which are diplayed in the tidy data set. Also as the instructions in the Course Project were unclear about which "means" and "standrad deviations" should be selected the meanFreq() variables were selected and preserved as well. 
 
 The tidy data sets contains only means of measurement for each activity for both test and train data for each subject.
 
