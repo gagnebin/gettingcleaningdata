@@ -5,11 +5,13 @@ The goals of this document are to provide information about the variables (inclu
 
 ###  Variables and units
 
-id: identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
+The column names (i.e. variables) are descibed below:
 
-ActivityLabel: activity name (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+1. id: identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
 
-ActivityCode: activity class (1, 2, 3, 4, 5, 6) labels with corresponds to ActivityLabel
+1, ActivityLabel: activity name (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+
+1. ActivityCode: activity class (1, 2, 3, 4, 5, 6) labels with corresponds to ActivityLabel
 
 For the following columns a complete description is given:
 
@@ -19,34 +21,42 @@ Subsequently, the body linear acceleration and angular velocity were derived in 
 
 Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
 
-These signals were used to estimate variables of the feature vector for each pattern:  
+The names of the variables are as followed:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
-
-tBodyAcc-XYZ (units:  'g' gravity units)
-tGravityAcc-XYZ (units:  'g' gravity units)
-tBodyAccJerk-XYZ (units:  'g' gravity units)
-tBodyGyro-XYZ (units: radians/second)
-tBodyGyroJerk-XYZ (units: radians/second)
-tBodyAccMag (units:  'g' gravity units)
-tGravityAccMag (units:  'g' gravity units)
-tBodyAccJerkMag (units:  'g' gravity units)
-tBodyGyroMag (units: radians/second)
-tBodyGyroJerkMag (units: radians/second)
-fBodyAcc-XYZ (units:  'g' gravity units)
-fBodyAccJerk-XYZ (units:  'g' gravity units)
-fBodyGyro-XYZ (units: radians/second)
-fBodyAccMag (units:  'g' gravity units)
-fBodyAccJerkMag (units:  'g' gravity units)
-fBodyGyroMag (units: radians/second)
-fBodyGyroJerkMag (units: radians/second)
-
-The set of variables that were estimated from these signals are: 
-
+'-ms' is used to denote 2 computations mean() and std() 
+where: 
 mean(): Mean of the mean of each variable for each activity for both test and train data
 std(): Mean of the standard deviation of each variable for each activity for both test and train data
 
-The tidy data sets contains only means of measurement for each activity for both test and train data for each subject.
+1. tBodyAcc-ms-XYZ (units:  'g' gravity units)
+1. tGravityAcc-ms-XYZ (units:  'g' gravity units)
+1. tBodyAccJerk-ms-XYZ (units:  'g' gravity units)
+1. tBodyGyro-ms-XYZ (units: radians/second)
+1. tBodyGyroJerk-ms-XYZ (units: radians/second)
+1. tBodyAccMag-ms (units:  'g' gravity units)
+1. tGravityAccMag-ms (units:  'g' gravity units)
+1. tBodyAccJerkMag-ms (units:  'g' gravity units)
+1. tBodyGyroMag-ms (units: radians/second)
+1. tBodyGyroJerkMag-ms (units: radians/second)
+1. fBodyAcc-ms-XYZ (units:  'g' gravity units)
+1. fBodyAcc-meanFreq()-XYZ (units:  'g' gravity units)
+1. fBodyAccJerk-ms-XYZ (units:  'g' gravity units)
+1. fBodyAccJerk-meanFreq()-XYZ (units:  'g' gravity units)
+1. fBodyGyro-ms-XYZ (units: radians/second)
+1. fBodyGyro-meanFreq()-XYZ (units: radians/second)
+1. fBodyAccMag-ms (units:  'g' gravity units)
+1. fBodyAccMag-meanFreq() (units:  'g' gravity units)
+1. fBodyAccJerkMag-ms (units:  'g' gravity units)
+1. fBodyAccJerkMag-ms (units:  'g' gravity units)
+1. fBodyGyroMag-ms (units: radians/second)
+1. fBodyGyroMag-meanFreq() (units: radians/second)
+1. fBodyGyroJerkMag-ms (units: radians/second)
+1. fBodyGyroJerkMag-meanFreq() (units: radians/second)
 
+
+To avoid confusion with the columns' names the second mean() was ignored, but in the README.md it's the "mean of the mean" and the "mean of the std" which are diplayed in the data set.
+
+The tidy data sets contains only means of measurement for each activity for both test and train data for each subject.
 
 ### Summary of how the data were tidied
 
