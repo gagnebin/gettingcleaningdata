@@ -9,7 +9,7 @@ What is delivered in the repository
 
 The following information are passed to the evaluator:
 
-1. A [tidy data set](http://vita.had.co.nz/papers/tidy-data.pdf) 
+1. A [tidy data set](https://github.com/gagnebin/gettingcleaningdata/blob/master/tidydataset.txt) 
 2. A code book markdown document describing each variable and its values in the tidy data set.  
 3. An explicit and exact recipe you used to go from 1 -> 2,3 
 
