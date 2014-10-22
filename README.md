@@ -64,7 +64,7 @@ Here is a pseudocode to replicate the analysis :
 1. Step 3 - run "run_analysis.R" with the following command line:
 source('~/run_analysis.R', echo=TRUE)
 1. Step 4 - read the result with the following command line:
-data <- read.table("tidydataset.txt", header = TRUE)
+data <- read.table("tidydataset.txt", header = TRUE)\n
 View(data)
 
 
